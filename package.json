@@ -1,0 +1,28 @@
+{
+  "name": "survey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html --no-source-maps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "parcel": "^2.0.0-beta.1",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.5",
+    "@react-firebase/auth": "^0.2.10",
+    "firebase": "^7.16.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
