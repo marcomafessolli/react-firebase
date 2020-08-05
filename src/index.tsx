@@ -10,7 +10,7 @@ import {FirebaseAuthConsumer, FirebaseAuthProvider} from "@react-firebase/auth";
 
 import './theme.scss'
 
-const App: React.F = () => {
+const App: React.FC = () => {
   return (
     <FirebaseAuthProvider {...CONFIG} firebase={firebase}>
       <FirebaseAuthConsumer>
