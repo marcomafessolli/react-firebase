@@ -6,15 +6,22 @@ import {CONFIG} from '../firebase-config';
 import * as React from 'react';
 import {render} from 'react-dom';
 
-import {FirebaseAuthConsumer, FirebaseAuthProvider} from "@react-firebase/auth";
+import {FirebaseAuthProvider, IfFirebaseAuthed, IfFirebaseUnAuthed} from "@react-firebase/auth";
 
 import './theme.scss'
+
+import {Home} from "./pages/home";
+import {Login} from "./pages/login";
 
 const App: React.FC = () => {
   return (
     <FirebaseAuthProvider {...CONFIG} firebase={firebase}>
-      <FirebaseAuthConsumer>
-      </FirebaseAuthConsumer>
+      <IfFirebaseAuthed>
+        <Home/>
+      </IfFirebaseAuthed>
+      <IfFirebaseUnAuthed>
+        <Login/>
+      </IfFirebaseUnAuthed>
     </FirebaseAuthProvider>
   )
 };
