@@ -18,10 +18,10 @@ const App: React.FC = () => {
   return (
     <FirebaseAuthProvider {...CONFIG} firebase={firebase}>
       <IfFirebaseAuthed>
-        {() => <Home />}
+        {() => <Home/>}
       </IfFirebaseAuthed>
       <IfFirebaseUnAuthed>
-        {() => <Login />}
+        {() => <Login/>}
       </IfFirebaseUnAuthed>
     </FirebaseAuthProvider>
   )
