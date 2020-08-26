@@ -1,3 +1,6 @@
+import 'normalize.css/normalize.css'
+import 'reset-css/reset.css'
+
 import * as firebase from 'firebase/app'
 import 'firebase/auth'
 
@@ -11,8 +14,6 @@ import {
   IfFirebaseAuthed,
   IfFirebaseUnAuthed
 } from '@react-firebase/auth'
-
-import './theme.scss'
 
 import { Home } from './pages/home'
 import { Login } from './pages/login'
