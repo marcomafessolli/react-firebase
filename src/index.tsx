@@ -1,5 +1,5 @@
-import 'normalize.css/normalize.css'
 import 'reset-css/reset.css'
+import 'normalize.css/normalize.css'
 
 import * as firebase from 'firebase/app'
 import 'firebase/auth'

@@ -1,7 +1,13 @@
 import * as React from 'react'
+import styled from 'styled-components'
+
+const Container = styled.div`
+  position: fixed;
+  bottom: 0;
+`
 
 const Dock: React.FC = () => {
-  return <div className='p-4 mx-auto stick bottom-0 bg-red'>Hello</div>
+  return <Container>Hello</Container>
 }
 
 export { Dock }
