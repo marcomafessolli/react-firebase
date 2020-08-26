@@ -1,14 +1,14 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import {Login as LoginComponent} from '../components/login/login'
+import { Login as LoginComponent } from '../components/login/login'
 
 const Login: React.FC = () => {
   return (
     <>
       <h1>Login:</h1>
-      <LoginComponent/>
+      <LoginComponent />
     </>
-  );
+  )
 }
 
-export { Login };
+export { Login }
